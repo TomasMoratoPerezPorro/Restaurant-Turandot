@@ -58,7 +58,7 @@ body {
 }
 
 .image-top {
-  height: 80vh;
+  height: 60vh;
   background-image: url(../../img/imatge_fons_2.jpg);
   background-size: cover;
   background-position: top right;
@@ -89,6 +89,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .intro {
@@ -108,10 +111,14 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 55%;
           flex: 0 0 55%;
-  padding: 2rem 8rem;
+  padding: 2rem 2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.intro__article.third-item {
+  padding: 2rem 8rem;
 }
 
 .intro__slogan {

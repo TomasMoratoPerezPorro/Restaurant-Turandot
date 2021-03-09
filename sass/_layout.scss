@@ -9,7 +9,7 @@
 }
 
 .image-top {
-  height: 80vh;
+  height: 60vh;
   background-image: url(../../img/imatge_fons_2.jpg);
   background-size: cover;
   background-position: top right;
@@ -31,6 +31,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .intro {
@@ -42,8 +44,11 @@
   &__article {
     /* background-color: lightblue; */
     flex: 0 0 55%;
-    padding: 2rem 8rem;
+    padding: 2rem 2rem;
     align-self: center;
+    &.third-item {
+      padding: 2rem 8rem;
+    }
   }
 
   &__slogan {
