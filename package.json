@@ -1,0 +1,12 @@
+{
+  "name": "turandot",
+  "version": "1.0.0",
+  "description": "Restaurant Turandot",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server"
+  },
+  "author": "Tomàs",
+  "license": "ISC",
+  "devDependencies": {}
+}
