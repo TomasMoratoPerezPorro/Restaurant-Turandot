@@ -2,7 +2,7 @@
   max-width: 120rem;
   margin: 0rem auto;
   background-color: var(--color-grey-light-1);
-  box-shadow: var(--shadow-dark);
+  /* box-shadow: var(--shadow-dark); */
   display: flex;
   flex-direction: column;
   min-height: 50rem;
@@ -19,7 +19,7 @@
 .header {
   position: fixed;
   z-index: 1;
-  width: 100%;
+  max-width: 120rem;
   top: 0;
 }
 
@@ -31,19 +31,37 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--color-grey-light-1);
+}
 
-  &__heading-1 {
-    display: block;
-    font-size: 2rem;
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+
+  &__article {
+    /* background-color: lightblue; */
+    flex: 0 0 55%;
+    padding: 2rem 8rem;
+    align-self: center;
   }
-  &__heading-2 {
-    display: block;
-    text-transform: uppercase;
-    font-size: 5rem;
+
+  &__slogan {
+    /* background-color: lightgoldenrodyellow; */
+    flex: 0 0 15%;
+    padding: 2rem;
+    align-self: flex-start;
   }
-  &__heading-3 {
-    display: block;
-    font-size: 1.4rem;
+
+  &__image-container {
+    /* background-color: lightsalmon; */
+    flex: 0 0 25%;
+    padding: 2rem;
+    align-self: stretch;
+
+    &__photo {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }
