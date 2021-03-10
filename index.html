@@ -15,14 +15,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./js/flickity/flickity.min.css" media="screen">
   </head>
   <body>
     
       <div class="image-top">
 
       
-      <header>
-        <nav class="topbar">
+      <header id="myHeader" class="header">
+        <nav class="topbar topbar-transparent">
           <ul class="topbar__ul">
             <li class="topbar__item">
               <a href="" class="topbar__item__link"
@@ -62,7 +64,7 @@
       <section class="intro">
         <div class="intro__slogan">
           <h2 class="intro__solgan__text">
-            El turandot és un acollidor restaurant
+            El turandot és un acollidor restaurant situat al cor de l'empordà
           </h2>
         </div>
         <div class="intro__image-container">
@@ -115,11 +117,245 @@
         </div>
       </section>
 
-      <section class="hero-photo">
-        <div class="intro__slogan">
-          <h2 class="intro__solgan__text">Casa nostra, al cor de Begur</h2>
+      <section class="hero-photo cheesecake">
+        <div class="hero-photo__slogan">
+          <h2 class="hero-photo__solgan heading">El nostre estimat Cheesecake</h2>
         </div>
       </section>
+
+
+      <section class="carta">
+        <header class="carta__intro">
+          <h2 class="carta__intro__heading">El nostre Menu</h2>
+          <p class="carta__intro__text">
+            Ens agrada pensar que hem creat un petit espai, íntim, relaxat, on
+            poder gaudir d'una bona estona, d'un bon àpat, una cita... però
+            sobretot un espai on sentir-se còmodes
+          </p>
+        </header>
+        <div class="carta__nav">
+          <nav class="carta__nav__navigation">
+      
+              <a
+                id="picapica"
+                href="#section_menu__nav"
+                class="mybutton button carta__nav__link active"
+                data-target="pizzaMenu"
+                >Per Coemnçar</a
+              >
+              <a
+                id="primers"
+                href="#section_menu__nav"
+                class="mybutton button carta__nav__link"
+                data-target="coffeeMenu"
+                >Primers</a
+              >
+              <a
+                id="segons"
+                href="#section_menu__nav"
+                class="mybutton button carta__nav__link"
+                data-target="noodlesMenu"
+                >Segons</a
+              >
+              <a
+                id="postres"
+                href="#section_menu__nav"
+                class="mybutton button carta__nav__link"
+                data-target="noodlesMenu"
+                >Postres</a
+              >
+            
+          </nav>
+        </div>
+
+        <div class="carta__plats">
+           <!-- Start Pizza Menu -->
+        <div class="carta__plats__menu" id="contenidos">
+          <article class="item">
+            <div class="item__header">
+              <h3 class="item__title">Greek Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$22</span>
+            </div>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </article>
+
+          <article class="item">
+            <div class="item__header">
+              <h3 class="item__title">Cheese Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$20</span>
+            </div>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </article>
+
+          <article class="item">
+            <div class="item__header">
+              <h3 class="item__title">Neapolitan Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$18</span>
+            </div>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </article>
+
+          <article class="item">
+            <div class="item__header">
+              <h3 class="item__title">Pepperoni Pizza</h3>
+              <span class="item__dots"></span>
+              <span class="item__price">$15</span>
+            </div>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              quos harum officia eaque nobis ut.
+            </p>
+          </article>
+        </div>
+        <!-- End Pizza Menu -->
+        </div>
+      </section>
+
+      <section class="imatges-plats">
+        <!-- Header -->
+        <header class="imatges-plats__intro">
+          <h2 class="imatges-plats__intro__heading">Els nostres plats</h2>
+          <p class="imatges-plats__intro__text">
+            Ens agrada pensar que hem creat un petit espai, íntim, relaxat, on
+            poder gaudir d'una bona estona, d'un bon àpat, una cita... però
+            sobretot un espai on sentir-se còmodes
+          </p>
+        </header>
+  
+        <!-- Carousel -->
+        <div class="carrousel-container">
+        <div class="carousel dots-disabled">
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_7.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell"> 
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_2.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_3.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_4.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_5.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_6.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_8.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_9.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_10.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_11.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_12.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_13.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+          <div class="carousel-cell">
+            <!-- Image -->
+            <img
+              src="img\imatge_carousel_14.jpg"
+              alt="..."
+              class="carousel-image"
+            />
+          </div>
+        </div>
+      </div>
+        <!-- / .section_dishes__carousel -->
+      </section>
+
+      <section class="hero-photo exterior">
+        <div class="hero-photo__slogan">
+          <h2 class="hero-photo__solgan__text">Vine a visitar-nos </h2>
+        </div>
+      </section>
+
+
     </div>
+    <!-- JS Custom -->
+    <script src="./js/flickity/flickity.pkgd.min.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

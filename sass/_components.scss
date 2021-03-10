@@ -2,6 +2,38 @@
 // TOPBAR
 
 .topbar {
+  &::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-white);
+    transform: translateY(-100%);
+    transition: all 0.3s;
+  }
+}
+
+.topbar-white::before {
+  transform: translateY(0);
+}
+
+.topbar {
+  &.topbar-transparent {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  &.topbar-white {
+    li {
+      a {
+        color: var(--color-black-1);
+        &.title {
+          color: var(--color-brown);
+        }
+      }
+    }
+  }
   &__ul {
     padding: 3rem;
     display: flex;
@@ -103,5 +135,170 @@
         z-index: 3;
       }
     }
+  }
+}
+
+////////////////////////////////////////
+// CARTA
+
+.carta {
+  background-color: #f0f0f0;
+
+  padding: 7rem;
+  &__intro {
+    h2 {
+      font-size: 2.8rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.6rem;
+      color: var(--color-grey-light-4);
+      margin-bottom: 2rem;
+    }
+  }
+  &__nav {
+    &__navigation {
+    }
+
+    &__link:link,
+    &__link:visited {
+      color: var(--color-grey-light-4);
+      text-decoration: none;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+
+      &:hover {
+        color: var(--color-black-1);
+      }
+    }
+  }
+  &__plats {
+  }
+}
+
+////////////////////////////////////////
+// CUSTOM BUTTONS CARTA
+
+.mybutton {
+  position: relative;
+  padding: 2rem;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    display: block;
+
+    content: '';
+    transition: all 0.1s;
+    transform: translateY(10px);
+    opacity: 0;
+    border-bottom: 3px solid #806345;
+  }
+}
+
+.mybutton.button.active::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+////////////////////////////////////////
+// ITEMS CARTA
+
+.item {
+  animation: moveInFade 0.2s ease-in;
+  &__header {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.42857;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #151515;
+  }
+
+  &__dots {
+    flex: 1;
+    border-bottom: 1px dashed #aaa;
+    margin: 0 15px;
+  }
+
+  &__price {
+    font-size: 1.7rem;
+    margin-bottom: 0.8em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 1.42857;
+  }
+
+  &__description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: left;
+    color: #777;
+    margin-bottom: 40px;
+  }
+}
+
+.carta__plats__menu {
+  animation: moveInFade 0.5s ease-in;
+}
+
+@keyframes moveInFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+////////////////////////////////////////
+// IMATGES-PLATS
+
+.imatges-plats {
+  padding: 7rem;
+  &__intro {
+    h2 {
+      font-size: 2.8rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.6rem;
+      color: var(--color-grey-light-4);
+      margin-bottom: 2rem;
+    }
+  }
+  &__nav {
+    &__link:link,
+    &__link:visited {
+      color: var(--color-grey-light-4);
+      text-decoration: none;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+
+      &:hover {
+        color: var(--color-black-1);
+      }
+    }
+  }
+  &__plats {
   }
 }
