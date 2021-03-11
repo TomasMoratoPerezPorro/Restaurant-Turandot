@@ -27,25 +27,23 @@
         <nav class="topbar topbar-transparent">
           <ul class="topbar__ul">
             <li class="topbar__item">
-              <a href="" class="topbar__item__link"
-                ><span>Sobre Nosaltres</span></a
+              <a href="#nosaltres" class="topbar__item__link"
+                ><span>Nosaltres</span></a
               >
             </li>
             <li class="topbar__item">
-              <a href="" class="topbar__item__link"
-                ><span>Sobre el menjar</span></a
-              >
+              <a href="#laNostraCuina" class="topbar__item__link"><span>La nostra cuina</span></a>
             </li>
             <li class="topbar__item">
               <a href="" class="topbar__item__link title"><span>Turandot Begur</h1></a>
             </li>
             <li class="topbar__item">
-              <a href="" class="topbar__item__link"
-                ><span>Algunes Imatges</span></a
+              <a href="#imatges" class="topbar__item__link"
+                ><span>Imatges</span></a
               >
             </li>
             <li class="topbar__item">
-              <a href="" class="topbar__item__link"><span>Reservar</span></a>
+              <a href="#reserva" class="topbar__item__link"><span>Reservar</span></a>
             </li>
           </ul>
         </nav>
@@ -61,7 +59,7 @@
 
     <div class="container">
 
-      <section class="intro">
+      <section class="intro nosaltres" id="nosaltres">
         <div class="intro__slogan">
           <h2 class="intro__solgan__text">
             El turandot és un acollidor restaurant situat al cor de l'empordà
@@ -118,13 +116,16 @@
       </section>
 
       <section class="hero-photo cheesecake">
-        <div class="hero-photo__slogan">
-          <h2 class="hero-photo__solgan heading">El nostre estimat Cheesecake</h2>
+        <div class="hero-photo__slogan brown-bg">
+          <h2 class="hero-photo__solgan">Tornem a obrir aviat...</h2>
+          <p class="hero-photo__solgan__paragraph">
+            T'esperem a partir del 26 de Març per a inagurar aquesta nove temporada
+          </p>
         </div>
       </section>
 
 
-      <section class="carta">
+      <section class="carta" id="laNostraCuina">
         <header class="carta__intro">
           <h2 class="carta__intro__heading">El nostre Menu</h2>
           <p class="carta__intro__text">
@@ -138,28 +139,28 @@
       
               <a
                 id="picapica"
-                href="#section_menu__nav"
+                href="#carta"
                 class="mybutton button carta__nav__link active"
                 data-target="pizzaMenu"
                 >Per Coemnçar</a
               >
               <a
                 id="primers"
-                href="#section_menu__nav"
+                href="#carta"
                 class="mybutton button carta__nav__link"
                 data-target="coffeeMenu"
                 >Primers</a
               >
               <a
                 id="segons"
-                href="#section_menu__nav"
+                href="#carta"
                 class="mybutton button carta__nav__link"
                 data-target="noodlesMenu"
                 >Segons</a
               >
               <a
                 id="postres"
-                href="#section_menu__nav"
+                href="#carta"
                 class="mybutton button carta__nav__link"
                 data-target="noodlesMenu"
                 >Postres</a
@@ -223,7 +224,7 @@
         </div>
       </section>
 
-      <section class="imatges-plats">
+      <section class="imatges-plats" id="imatges">
         <!-- Header -->
         <header class="imatges-plats__intro">
           <h2 class="imatges-plats__intro__heading">Els nostres plats</h2>
@@ -346,11 +347,35 @@
         <!-- / .section_dishes__carousel -->
       </section>
 
-      <section class="hero-photo exterior">
-        <div class="hero-photo__slogan">
-          <h2 class="hero-photo__solgan__text">Vine a visitar-nos </h2>
+      <section class="reserva" id="reserva">
+        <div class="hero-photo exterior">
+        <div class="hero-photo__slogan white-bg">
+          <h2 class="hero-photo__solgan__text visitar-nos">Vine a visitar-nos </h2>
+          
+            <a target="_blank" href="https://g.page/turandotbegur?share" class="adress-link adress" rel="noopener noreferrer">
+              <img src="./icons/black/SVG/location.svg" alt="Localització" class="adress__icon">
+              <p>Avinguda Onze de Setembre, 27 - 17255 Begur &#8211; Costa Brava</p>
+            </a>
+            <div class="adress-link adress">
+              <img src="./icons/black/SVG/phone.svg" alt="Localització" class="adress__icon">
+              <a href="callto:0034934181242" class="adress__phone">+34 972 62 26 08</a><a class="adress__phone" href="callto:0034664309790">+34 664 30 97 90</a>
+            </div>
+            <h2 class="hero-photo__solgan__text horari">Horari</h2>
+            <div class="adress">
+              <div class="adress__horari"><b>MIGDIA</b> <p>dimarts - diumenge de 12:30 a 14:00</p></div>
+              <div class="adress__horari"><b>NIT</b> <p>dimarts - diumenge de 20:30 a 23:00</p></div>
+            </div>
+          
         </div>
+      </div>
       </section>
+
+      <footer class="footer">
+        <p class="footer__text">Avinguda Onze de Setembre, 27<br />
+          17255 Begur &#8211; Costa Brava<br />
+          +34 972 62 26 08 | +34 664 30 97 90<br />
+          <a href="mailto:restaurant@turandot.es">restaurant@turandot.es</a></p>
+      </footer>
 
 
     </div>

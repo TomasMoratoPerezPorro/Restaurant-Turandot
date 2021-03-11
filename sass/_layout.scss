@@ -47,6 +47,10 @@
   flex-direction: row;
   padding: 2rem;
 
+  &.nosaltres {
+    padding: 12rem 2rem;
+  }
+
   &__article {
     /* background-color: lightblue; */
     flex: 0 0 55%;
@@ -82,14 +86,14 @@
   width: 100%;
 
   &.cheesecake {
-    height: 50vh;
+    min-height: 50vh;
     background-image: url(../../img/imatge_gradient_01.png);
     background-size: cover;
     background-position: top right;
   }
 
   &.exterior {
-    height: 50vh;
+    min-height: 50vh;
     background-image: url(../../img/imatge_fons_3.jpg);
     background-size: cover;
     background-position: top right;
@@ -101,13 +105,82 @@
 
   &__slogan {
     position: absolute;
+
     top: 5%;
     left: 10%;
-    background-color: white;
+
     padding: 5rem;
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
+
+    &.brown-bg {
+      background-color: var(--color-brown);
+      width: 30%;
+      h2 {
+        color: var(--color-white);
+      }
+      p {
+        color: var(--color-grey-light-2);
+      }
+    }
+
+    &.white-bg {
+      background-color: var(--color-white);
+      width: 50%;
+      h2 {
+        color: var(--color-black-1);
+      }
+      p {
+        color: var(--color-grey-light-4);
+      }
+    }
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.8rem;
+      font-family: 'Lato', serif;
+      &.horari {
+        margin-top: 1rem;
+      }
+      &.visitar-nos {
+        margin-bottom: 1.6rem;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      color: var(--color-grey-light-2);
+    }
+  }
+
+  .adress {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-decoration: none;
+    padding: 1rem;
+
+    &__horari {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    &__icon {
+      margin-right: 1.5rem;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &__phone {
+      text-decoration: none;
+      margin-right: 1.5rem;
+      transition: all 0.2s;
+      font-size: 1.6rem;
+      color: var(--color-grey-light-4);
+      padding: 1rem;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -117,8 +190,8 @@
 .carta {
   display: flex;
   flex-direction: column;
-  padding: 7rem;
-  margin-bottom: 10rem;
+  padding: 12rem 7rem;
+
   &__intro {
     display: flex;
     flex-direction: column;
@@ -147,8 +220,8 @@
 .imatges-plats {
   display: flex;
   flex-direction: column;
-  padding: 7rem;
-  margin-bottom: 10rem;
+  padding: 12rem 7rem 0rem;
+  margin-bottom: 2rem;
   &__intro {
     display: flex;
     flex-direction: column;
@@ -175,5 +248,15 @@
 }
 
 .carrousel-container {
-  padding: 2rem;
+  padding-top: 2rem;
+}
+
+.reserva {
+  padding-top: 12rem;
+}
+.footer {
+  background-color: var(--color-grey-light-2);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
 }

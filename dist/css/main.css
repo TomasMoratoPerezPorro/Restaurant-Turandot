@@ -111,6 +111,10 @@ body {
   padding: 2rem;
 }
 
+.intro.nosaltres {
+  padding: 12rem 2rem;
+}
+
 .intro__article {
   /* background-color: lightblue; */
   -webkit-box-flex: 0;
@@ -160,14 +164,14 @@ body {
 }
 
 .hero-photo.cheesecake {
-  height: 50vh;
+  min-height: 50vh;
   background-image: url(../../img/imatge_gradient_01.png);
   background-size: cover;
   background-position: top right;
 }
 
 .hero-photo.exterior {
-  height: 50vh;
+  min-height: 50vh;
   background-image: url(../../img/imatge_fons_3.jpg);
   background-size: cover;
   background-position: top right;
@@ -187,12 +191,103 @@ body {
   position: absolute;
   top: 5%;
   left: 10%;
-  background-color: white;
   padding: 5rem;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.hero-photo__slogan.brown-bg {
+  background-color: var(--color-brown);
+  width: 30%;
+}
+
+.hero-photo__slogan.brown-bg h2 {
+  color: var(--color-white);
+}
+
+.hero-photo__slogan.brown-bg p {
+  color: var(--color-grey-light-2);
+}
+
+.hero-photo__slogan.white-bg {
+  background-color: var(--color-white);
+  width: 50%;
+}
+
+.hero-photo__slogan.white-bg h2 {
+  color: var(--color-black-1);
+}
+
+.hero-photo__slogan.white-bg p {
+  color: var(--color-grey-light-4);
 }
 
 .hero-photo__slogan h2 {
-  font-size: 2rem;
+  font-size: 2.8rem;
+  font-family: 'Lato', serif;
+}
+
+.hero-photo__slogan h2.horari {
+  margin-top: 1rem;
+}
+
+.hero-photo__slogan h2.visitar-nos {
+  margin-bottom: 1.6rem;
+}
+
+.hero-photo__slogan p {
+  font-size: 1.6rem;
+  color: var(--color-grey-light-2);
+}
+
+.hero-photo .adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.hero-photo .adress__horari {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.hero-photo .adress__icon {
+  margin-right: 1.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.hero-photo .adress__icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.hero-photo .adress__phone {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 1.6rem;
+  color: var(--color-grey-light-4);
+  padding: 1rem;
+}
+
+.hero-photo .adress__phone:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .carta {
@@ -203,8 +298,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 7rem;
-  margin-bottom: 10rem;
+  padding: 12rem 7rem;
 }
 
 .carta__intro {
@@ -264,8 +358,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 7rem;
-  margin-bottom: 10rem;
+  padding: 12rem 7rem 0rem;
+  margin-bottom: 2rem;
 }
 
 .imatges-plats__intro {
@@ -318,7 +412,23 @@ body {
 }
 
 .carrousel-container {
-  padding: 2rem;
+  padding-top: 2rem;
+}
+
+.reserva {
+  padding-top: 12rem;
+}
+
+.footer {
+  background-color: var(--color-grey-light-2);
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .topbar::before {
@@ -460,7 +570,6 @@ body {
 
 .carta {
   background-color: #f0f0f0;
-  padding: 7rem;
 }
 
 .carta__intro h2 {
@@ -594,10 +703,6 @@ body {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-}
-
-.imatges-plats {
-  padding: 7rem;
 }
 
 .imatges-plats__intro h2 {
