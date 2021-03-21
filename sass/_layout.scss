@@ -9,10 +9,10 @@
 }
 
 .image-top {
-  height: 60vh;
+  min-height: 85vh;
   background-image: url(../../img/imatge_fons_2.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: center center;
   position: relative;
 }
 
@@ -59,6 +59,10 @@
     &.third-item {
       padding: 2rem 8rem;
     }
+
+    @media only screen and (max-width: $bp-large) {
+      flex: 0 0 65%;
+    }
   }
 
   &__slogan {
@@ -66,6 +70,10 @@
     flex: 0 0 15%;
     padding: 2rem;
     align-self: flex-start;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
   }
 
   &__image-container {
@@ -73,6 +81,10 @@
     flex: 0 0 25%;
     padding: 2rem;
     align-self: stretch;
+
+    @media only screen and (max-width: $bp-large) {
+      flex: 0 0 25%;
+    }
 
     &__photo {
       width: 100%;
@@ -86,14 +98,14 @@
   width: 100%;
 
   &.cheesecake {
-    min-height: 50vh;
+    min-height: 65vh;
     background-image: url(../../img/imatge_gradient_01.png);
     background-size: cover;
     background-position: top right;
   }
 
   &.exterior {
-    min-height: 50vh;
+    min-height: 70vh;
     background-image: url(../../img/imatge_fons_3.jpg);
     background-size: cover;
     background-position: top right;
@@ -253,10 +265,42 @@
 
 .reserva {
   padding-top: 12rem;
+  margin-bottom: 1rem;
 }
 .footer {
-  background-color: var(--color-grey-light-2);
-  min-height: 60vh;
+  background-color: var(--color-brown);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__social-icons {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.social-icon {
+  &__button {
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+
+  &__icon {
+    width: 3rem;
+  }
 }
