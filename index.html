@@ -25,7 +25,7 @@
       
       <header id="myHeader" class="header">
         <nav class="topbar topbar-transparent">
-          <ul class="topbar__ul">
+          <ul class="topbar__ul" id="myTopnav">
             <li class="topbar__item">
               <a href="#nosaltres" class="topbar__item__link"
                 ><span>Nosaltres</span></a
@@ -34,7 +34,7 @@
             <li class="topbar__item">
               <a href="#laNostraCuina" class="topbar__item__link"><span>La nostra cuina</span></a>
             </li>
-            <li class="topbar__item">
+            <li class="topbar__item logo">
               <a href="" class="topbar__item__link title"><span>Turandot Begur</h1></a>
             </li>
             <li class="topbar__item">
@@ -44,6 +44,11 @@
             </li>
             <li class="topbar__item">
               <a href="#reserva" class="topbar__item__link"><span>Reservar</span></a>
+            </li>
+            <li class="topbar__item menuIcon">
+              <a href="javascript:void(0);" class="topbar__item__link" onclick="burguerMenuFunction()">
+                <img src="./icons/black/SVG/menu.svg" class="topbar__item menuIcon" alt="menu">
+              </a>
             </li>
           </ul>
         </nav>

@@ -34,6 +34,7 @@
       }
     }
   }
+
   &__ul {
     padding: 3rem;
     display: flex;
@@ -41,6 +42,17 @@
     align-items: baseline;
     flex-direction: row;
     list-style-type: none;
+
+    &.responsive {
+      display: flex;
+      flex-direction: column;
+      .topbar__item {
+        display: block;
+        &.logo {
+          display: none;
+        }
+      }
+    }
   }
 
   &__item {
@@ -63,6 +75,23 @@
 
         text-transform: uppercase;
         font-size: 2rem;
+      }
+    }
+    &.logo {
+      display: block;
+      align-self: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    &.menuIcon {
+      @media only screen and (min-width: $bp-medium) {
+        display: none;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        display: block;
       }
     }
   }

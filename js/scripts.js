@@ -69,6 +69,15 @@ function myFunction() {
   }
 }
 
+function burguerMenuFunction() {
+  var x = document.getElementById('myTopnav');
+  if (x.className === 'topbar__ul') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'topbar__ul';
+  }
+}
+
 function carrousel() {
   var e = $('.carousel');
   e.length &&

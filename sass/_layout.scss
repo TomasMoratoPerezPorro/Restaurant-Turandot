@@ -283,6 +283,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    color: var(--color-white);
+  }
+
+  &__text {
+    a {
+      text-decoration: none;
+      margin-top: 1rem;
+      color: var(--color-black-1);
+    }
   }
 
   &__social-icons {
